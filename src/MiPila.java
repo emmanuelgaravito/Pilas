@@ -1,6 +1,6 @@
 public class MiPila {
     private int[] datos;
-    private int tope; // -1 significa vacía
+    private int tope;
 
     public MiPila(int capacidad) {
         datos = new int[capacidad];
@@ -35,7 +35,7 @@ public class MiPila {
     public int desapilar() {
         if (estaVacia()) {
             System.out.println("No se puede desapilar: la pila está vacía.");
-            return -1; // valor de error simple
+            return -1;
         }
         int valor = datos[tope];
         tope--;
